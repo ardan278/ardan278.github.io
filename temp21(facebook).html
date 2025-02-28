@@ -114,14 +114,46 @@
           <div><input type="radio" name="gender" /></div>
         </div>
         <div class="radioClass">
-            <div><label> Male</label></div>
-                <div><input type="radio" name="gender" /></div>
+          <div><label> Male</label></div>
+          <div><input type="radio" name="gender" /></div>
         </div>
         <div class="radioClass">
-            <div><label> Custom</label></div>
-            <div><input type="radio" name="gender" /></div>
+          <div><label> Custom</label></div>
+          <div><input type="radio" name="gender" /></div>
         </div>
       </div>
     </div>
+
+    <script>
+      let daySelect = document.getElementById("day");
+      daySelect.innerHTML = '<option value="">Day</option>';
+      for (let i = 1; i <= 31; i++) {
+        let option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        daySelect.appendChild(option);
+      }
+      let monthSelect = document.getElementById("month");
+      let months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      monthSelect.innerHTML = '<option value="">Month</option>';
+      months.forEach((month, index) => {
+        let option = document.createElement("option");
+        option.value = index + 1;
+        option.textContent = month;
+        monthSelect.appendChild(option);
+      });
+      let yearSelect = document.getElementById("year");
+      let currentYear = new Date().getFullYear();
+      yearSelect.innerHTML = '<option value="">Year</option>';
+      for (let i = currentYear; i >= 1900; i--) {
+        let option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        yearSelect.appendChild(option);
+      }
+    </script>
   </body>
 </html>

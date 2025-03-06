@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Projects</title>
 </head>
 <body>
-    <div class="container-fluid bg-dark text-center p-3 mt-auto">
-        <h style="font-family: Georgia, 'Times New Roman', Times, serif; color: white; font-size: 30px;">Arun Daniel</h>
+    <div class="container-fluid bg-dark py-3 fixed-top">
+        <div class="d-flex justify-content-between align-items-center">
+            <h style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px;" class="logo text-white mx-3">Arun Daniel</h>
+            <nav class="cols">
+                <a href="#home" class="btn btn-outline-primary mx-1">Home</a>
+                <a href="#projects" class="btn btn-outline-primary mx-1">Projects</a>
+                <a href="#services" class="btn btn-outline-primary mx-1">Services</a>
+                <a href="#contact" class="btn btn-outline-primary mx-1">Contact</a>
+            </nav>
+        </div>
     </div>
-    <div class="d-flex justify-content-end align-items-center fixed-top">
-        <nav>
-            <a href="#home" class="btn btn-outline-primary mx-1">Home</a>
-            <a href="#projects" class="btn btn-outline-primary mx-1">Projects</a>
-            <a href="#services" class="btn btn-outline-primary mx-1">Services</a>
-            <a href="#about" class="btn btn-outline-primary mx-1">About</a>
-            <a href="#contact" class="btn btn-outline-primary mx-1">Contact</a>
-        </nav>
-    </div>    
-    <div class="card m-3 p-3 bg-secondary" id="home">
-        <div class="row align-items-center p-4 justify-content-center">
-            <h1 class="card-header text-center bg-light rounded">Full Stack Developer</h1>
-            <div class="col-lg-8 p-3 text-white">
-                <p style="text-align: justify;">
+    <div class="row bg-secondary m-0" id="home">
+        <h1 class="card-header text-center bg-light rounded">Full Stack Developer</h1>
+        <div style="display: flex;padding-top: 50px;">
+            <div class="box">
+                <p style="text-align: justify;" class="text-white">
                     A Full Stack Web Developer is skilled in both frontend and backend development. 
                     They work with technologies like HTML, CSS, JavaScript, and frameworks such as 
                     React or Angular for the frontend. For the backend, they use languages like Node.js, 
                     Python, or Java, along with databases like MySQL or MongoDB. They handle both 
                     client-side and server-side operations to create dynamic web applications. 
                 </p>
-                <p style="text-align: justify;">
+                <p style="text-align: justify;" class="text-white">
                     Full Stack Developers are proficient in API development and integration for seamless 
                     communication between systems. They ensure website responsiveness, security, and 
                     performance optimization. Version control systems like Git help them manage and 
@@ -42,114 +42,124 @@
                     play a vital role in building scalable, user-friendly web applications.
                 </p>
             </div>
-            <div class="col-lg-4 p-3">
-                <img class="w-60 rounded" src="https://picsum.photos/id/2/400/400">
-            </div>
+            <div class="col-lg-3">
+                <img class="rounded" style="height: 300px; width: auto;" src="https://picsum.photos/id/2/400/400">
+            </div>            
         </div>
     </div>
-    <div id="projects" class="card m-3 p-3">
-        <div class="row align-items-center p-4">
-            <h1 class="card-header bg-light rounded text-center">Projects</h1>
-            <div class="my-3">
-                <div class="card-group" style="background-color: yellow;">
-                        <div class="card m-3 p-3 shadow-lg rounded">
-                            <div class="card-header my-2 text-center rounded" style="font-size: 25px; font-weight: 500; background-color:rgb(142, 142, 255);">Project 1</div>
-                            <div class="card-body">
-                                <h5 class="card-title">E-Commerce Website</h5>
-                                <p class="card-text">
-                                    A fully functional online store where users can browse products, add them to a cart, and purchase them securely. 
-                                    It includes features like product filtering, a checkout system, and payment gateway integration.
-                                </p>
-                                <a href="https://ardan278.github.io/Project1/index.html"><button class="btn w-100 mt-auto custom-btn">Project1</button></a>
-                        </div>
+    <div id="projects" class="row m-0" style="background-color: red;">
+        <h1 class="card-header text-center bg-light rounded my-3">Projects</h1>
+        <div class="card-group">
+            <div class="col-md-4">
+                <div class="card m-3 p-3 shadow-lg rounded">
+                    <div class="card-header my-2 text-center rounded" style="font-size: 25px; font-weight: 500; background-color:rgb(142, 142, 255);">Project 1</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee-Order</h5>
+                        <p class="card-text">
+                            The Coffee Ordering Project is an online system that allows customers to browse a menu, customize their coffee, and place orders easily. It provides a smooth checkout process with secure payment options and real-time order tracking. This project enhances convenience for customers and helps cafés manage orders efficiently.
+                        </p>
+                        <a href="https://ardan278.github.io/Project1/index.html"><button class="btn w-100 btn-outline-primary">View Project1</button></a>
                     </div>
-        
-                        <div class="card m-3 p-3 shadow-lg rounded">
-                            <div class="card-header my-2 text-center rounded" style="font-size: 25px; background-color:rgb(142, 142, 255); font-weight: 500;">Project 2</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Task Management App</h5>
-                                <p class="card-text">
-                                    A web or mobile app that helps users create, track, and manage tasks efficiently. 
-                                    Features include task prioritization, due date reminders, and collaboration tools for teams.
-                                </p>
-                                <a href="project1.html"><button>Open Project1</button></a>
-
-                        </div>
-                    </div>
-        
-                        <div class="card m-3 p-3 shadow-lg rounded">
-                            <div class="card-header my-2 text-center rounded" style="font-size: 25px; background-color:rgb(142, 142, 255); font-weight: 500;">Project 3</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Weather Forecast App</h5>
-                                <p class="card-text">
-                                    A web app that provides real-time weather updates for any location. 
-                                    It integrates with a weather API to display temperature, humidity, and forecasts, with a simple and responsive UI.
-                                </p>
-                                <button class="btn w-100 mt-auto custom-btn">Download Image</button>
-                        </div>
-                    </div>   
                 </div>
             </div>
-    </div>
-    <div id="services" class="card-group m-3 p-3 row align-items-center p-4 rounded" style="background-color: lightblue">
-        <h1 class="card-header text-center">Services</h1>
-        <div style="display: flex">
-            <div class="card m-3 p-3">
-                <h3>Web App Development</h3>
-                <p>
-                    Web app development is the process of creating interactive and dynamic applications that run on web browsers. It involves using programming languages such as HTML, CSS, and JavaScript, along with backend technologies like Node.js, Python, or Ruby, to build user-friendly, responsive applications. Web apps are designed to be accessible on various devices, providing users with seamless experiences across platforms. The goal is to create scalable, secure, and efficient applications that meet the needs of users and businesses alike.
-                </p>
+            <div class="col-md-4">
+                <div class="card m-3 p-3 shadow-lg rounded">
+                    <div class="card-header my-2 text-center rounded" style="font-size: 25px; background-color:rgb(142, 142, 255); font-weight: 500;">Project 2</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">
+                            A web or mobile app that helps users create, track, and manage tasks efficiently. 
+                            Features include task prioritization, due date reminders, and collaboration tools for teams.
+                        </p>
+                        <a href="https://ardan278.github.io/Project2/index.html"><button class="btn w-100 btn-outline-primary">View Project1</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="card m-3 p-3">
-                <h3>Mobile App Development</h3>
-                <p>
-                    Mobile app development is the process of creating software applications that run on mobile devices such as smartphones and tablets. It involves designing and building apps for various platforms like iOS, Android, and cross-platform solutions. Developers use programming languages such as Swift, Java, and Kotlin to create intuitive, user-friendly apps that serve a wide range of purposes, from gaming and entertainment to business and productivity. With the increasing use of mobile devices, mobile app development has become a crucial part of the digital landscape.
-                </p>
+            <div class="col-md-4">
+                <div class="card m-3 p-3 shadow-lg rounded">
+                    <div class="card-header my-2 text-center rounded" style="font-size: 25px; background-color:rgb(142, 142, 255); font-weight: 500;">Project 3</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">
+                            A web or mobile app that helps users create, track, and manage tasks efficiently. 
+                            Features include task prioritization, due date reminders, and collaboration tools for teams.
+                        </p>
+                        <a href="https://ardan278.github.io/Project1/index.html"><button class="btn w-100 btn-outline-primary">View Project1</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="card m-3 p-3">
-                <h3>Backend Development</h3>
-                <p>
-                    Backend development refers to the server-side of web development, focusing on the structure, database interactions, and application logic that users don't directly see. It involves working with programming languages such as Python, Java, and Node.js, along with databases like MySQL and MongoDB. Backend developers ensure that the frontend of a website or application can interact smoothly with the database and server, providing functionality like data storage, security, and performance optimization.
-                </p>
+            <div class="col-md-4">
+                <div class="card m-3 p-3 shadow-lg rounded">
+                    <div class="card-header my-2 text-center rounded" style="font-size: 25px; background-color:rgb(142, 142, 255); font-weight: 500;">Project 4</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">
+                            A web or mobile app that helps users create, track, and manage tasks efficiently. 
+                            Features include task prioritization, due date reminders, and collaboration tools for teams.
+                        </p>
+                        <a href="https://ardan278.github.io/Project1/index.html"><button class="btn w-100 btn-outline-primary">View Project1</button></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div id="about" class="card m-3 p-3">
-        <h1 class="card-header text-center rounded">About</h1>
-        <p class="card-body" style="font-size: 20px;">
-            Arun Daniel is a driven individual with a passion for technology and continuous learning. With a strong foundation in fields like artificial intelligence, machine learning, and software development, Arun is dedicated to solving complex problems and creating impactful solutions. Always eager to expand his knowledge and skills, Arun stays engaged with the latest trends in technology, consistently working towards personal and professional growth.
-        </p>
-        <h2 class="card-header text-center rounded">Skills</h3>
-        <h3 class="card-body">Java, Python, Reactjs</h3>
-        <p class="card-footer text-center rounded">Display the logo of all the technologies you know.</p>
-    </div>
-    <div id="contact" class="card m-3 p-3" style="background-color: lightgoldenrodyellow">
-        <h1 class="card-header text-center rounded bg-warning">Contact</h1>
-        <div class="d-flex justify-content-center">
-            <div class="card-body">
-                <h3>Contact Form</h3>
-                <p><input type="text" placeholder="Enter Name"></p>
-                <p><input type="email" placeholder="Enter Email"></p>
-                <p><textarea rows="10" cols="60" placeholder="Enter message"></textarea></p>
-                <button>Send</button>
-            </div>
-            <div class="card-body">
-                <h3>Arun</h3>
-                <p>
-                    <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                    quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-                    aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-                    Perspiciatis, ab.
-                </p>
-                <p>
-                    <b>Email Address: </b>sample@email.com
-                </p>
-                <p>
-                    <b>Phone Number: </b>+91 343 445 6789
-                </p>
+            <div class="col-md-4">
+                <div class="card m-3 p-3 shadow-lg rounded">
+                    <div class="card-header my-2 text-center rounded" style="font-size: 25px; background-color:rgb(142, 142, 255); font-weight: 500;">Project 5</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Task Management App</h5>
+                        <p class="card-text">
+                            A web or mobile app that helps users create, track, and manage tasks efficiently. 
+                            Features include task prioritization, due date reminders, and collaboration tools for teams.
+                        </p>
+                        <a href="https://ardan278.github.io/Project1/index.html"><button class="btn w-100 btn-outline-primary">View Project1</button></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="services" class="row m-0">
+            <h1 class="card-header text-center bg-light rounded my-3">Services</h1>
+            <div class="card-group">
+                <div class="col-md-4">
+                    <div class="card m-3 p-3 shadow-lg rounded">
+                        <h3 class="card-header m-3 p-3 rounded">Web App Development</h3>
+                        <p>
+                            Web app development involves creating applications that users access through a web browser. It combines frontend technologies like HTML, CSS, and JavaScript with backend frameworks such as Node.js or Django. Unlike desktop apps, web apps don’t require installation and are accessible from any device with an internet connection. Key features include responsiveness, integration with external services, and ensuring security and performance for a smooth user experience. Web app development is essential for creating accessible, scalable, and user-friendly applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-3 p-3 shadow-lg rounded">
+                        <h3 class="card-header m-3 p-3 rounded">Mobile App Development</h3>
+                        <p>
+                            Mobile app development involves creating software applications designed to run on mobile devices such as smartphones and tablets. It typically includes building apps for platforms like Android and iOS using programming languages like Java, Kotlin, Swift, or frameworks like React Native. Mobile apps offer a more tailored user experience compared to web apps, leveraging device-specific features like cameras, GPS, and sensors. The development process focuses on user interface design, functionality, performance optimization, and ensuring compatibility across different devices.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-3 p-3 shadow-lg rounded">
+                        <h3 class="card-header m-3 p-3 rounded">Backend Development</h3>
+                        <p class="card-body">
+                            Backend development focuses on building the server-side of web applications. It involves working with databases, server logic, APIs, and authentication to ensure that the application functions smoothly behind the scenes. Backend developers use languages like Python, Java, or Node.js, along with frameworks like Django or Express, to manage data, handle user requests, and ensure performance and security. The goal is to create a robust, scalable, and efficient system that supports the frontend of the application.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="row m-0 bg-light">
+        <h1 class="card-header text-center bg-light rounded my-3">Contact</h1>
+        <div class="d-flex justify-content-center p-3">
+            <form class="w-50">
+                <input type="text" placeholder="Enter Name" class="form-control my-2">
+                <input type="email" placeholder="Enter Email" class="form-control my-2">
+                <textarea rows="5" class="form-control my-2" placeholder="Enter message"></textarea>
+                <button type="submit" class="btn btn-primary w-100">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
 </html>

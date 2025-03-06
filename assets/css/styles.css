@@ -61,3 +61,31 @@
       border: none;
       border-radius: 10%;
     }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .btn {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.6s ease-in-out;
+    }
+    .custom-btn {
+      background-color: rgb(48, 169, 209);
+      color: white;
+      border: none;
+      transition: all 0.6s ease-in-out;
+  }
+  .custom-btn:hover {
+      background-color: rgb(30, 130, 170);
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
